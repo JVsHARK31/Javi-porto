@@ -64,7 +64,7 @@ export default function MouseFollower() {
             scale: isHovering ? 1.5 : 1,
           }}
           transition={{
-            type: 'spring',
+            type: 'spring' as const,
             stiffness: 300,
             damping: 20,
           }}
@@ -88,7 +88,7 @@ export default function MouseFollower() {
             opacity: isHovering ? 0.3 : 0.15,
           }}
           transition={{
-            type: 'spring',
+            type: 'spring' as const,
             stiffness: 150,
             damping: 25,
             mass: 1,

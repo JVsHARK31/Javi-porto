@@ -14,7 +14,8 @@ const containerVariants = {
     transition: {
       delayChildren: 0.5,
       staggerChildren: 0.15,
-      ease: [0.43, 0.13, 0.23, 0.96],
+      duration: 0.8,
+      ease: [0.43, 0.13, 0.23, 0.96] as const,
     },
   },
 }
@@ -25,11 +26,11 @@ const itemVariants = {
     y: 0,
     opacity: 1,
     transition: {
-      type: 'spring',
+      type: 'spring' as const,
       damping: 20,
       stiffness: 80,
       mass: 0.8,
-      ease: [0.48, 0.15, 0.25, 1],
+      ease: [0.48, 0.15, 0.25, 1] as const,
     },
   },
 }
@@ -66,7 +67,7 @@ export default function Hero() {
           y: mousePosition.y * 0.008,
         }}
         transition={{ 
-          type: 'spring', 
+          type: 'spring' as const, 
           stiffness: 30,
           damping: 30,
           mass: 2
@@ -83,7 +84,7 @@ export default function Hero() {
           transition={{
             duration: 12,
             repeat: Infinity,
-            ease: [0.455, 0.03, 0.515, 0.955],
+            ease: [0.455, 0.03, 0.515, 0.955] as const,
             times: [0, 0.33, 0.66, 1]
           }}
         />
@@ -98,7 +99,7 @@ export default function Hero() {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: [0.43, 0.13, 0.23, 0.96],
+            ease: [0.43, 0.13, 0.23, 0.96] as const,
             delay: 1.5,
             times: [0, 0.25, 0.75, 1]
           }}
@@ -114,7 +115,7 @@ export default function Hero() {
           transition={{
             duration: 14,
             repeat: Infinity,
-            ease: [0.48, 0.15, 0.25, 1],
+            ease: [0.48, 0.15, 0.25, 1] as const,
             delay: 3,
             times: [0, 0.4, 0.7, 1]
           }}
@@ -183,18 +184,20 @@ export default function Hero() {
           variants={itemVariants}
           className="mb-6 sm:mb-8"
         >
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed px-4">
-            <WordReveal 
+          <div className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed px-4">
+            <WordReveal
               text="Passionate dalam menciptakan solusi inovatif melalui teknologi."
               delay={1.2}
               stagger={0.02}
             />
-            <span className="block sm:inline">
-              {' '}Fokus pada <CharReveal text="Software Engineering" className="text-sakura-500 font-semibold" delay={1.8} />, 
-              {' '}<CharReveal text="Frontend Development" className="text-sakura-500 font-semibold" delay={2.2} />, dan 
-              {' '}<CharReveal text="Artificial Intelligence" className="text-sakura-500 font-semibold" delay={2.6} />.
-            </span>
-          </p>
+            <div>
+              {' '}Fokus pada <CharReveal text="Software Engineering" className="text-sakura-500 font-semibold" delay={1.8} />,
+              {' '}<CharReveal text="Frontend Development" className="text-sakura-500 font-semibold" delay={2.2} />, dan
+            </div>
+            <div className="mt-1 sm:mt-2">
+              {' '}<CharReveal text="Artificial Intelligence" className="text-sakura-500 font-semibold" delay={2.6} />
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
@@ -212,7 +215,7 @@ export default function Hero() {
                 initial={{ x: '-100%' }}
                 whileHover={{ x: 0 }}
                 transition={{ 
-                  type: 'spring', 
+                  type: 'spring' as const, 
                   stiffness: 150,
                   damping: 20,
                   mass: 0.5
@@ -254,7 +257,7 @@ export default function Hero() {
                 scale: 1,
                 transition: {
                   delay: 1.2 + index * 0.15,
-                  type: 'spring',
+                  type: 'spring' as const,
                   stiffness: 260,
                   damping: 20
                 }
@@ -269,7 +272,7 @@ export default function Hero() {
                     ease: 'easeInOut'
                   },
                   scale: {
-                    type: 'spring',
+                    type: 'spring' as const,
                     stiffness: 300,
                     damping: 15
                   }

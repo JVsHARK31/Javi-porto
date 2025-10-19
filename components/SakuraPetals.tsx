@@ -80,14 +80,14 @@ export default function SakuraPetals() {
               duration: petal.duration,
               repeat: Infinity,
               repeatType: 'loop',
-              ease: [0.455, 0.03, 0.515, 0.955], // Custom bezier for natural sway
+              ease: [0.455, 0.03, 0.515, 0.955] as const, // Custom bezier for natural sway
               times: [0, 0.2, 0.5, 0.8, 1]
             },
             y: {
               duration: petal.duration,
               repeat: Infinity,
               delay: petal.delay,
-              ease: [0.48, 0.15, 0.25, 1] // Gentle falling curve
+              ease: [0.48, 0.15, 0.25, 1] as const // Gentle falling curve
             },
             rotate: {
               duration: petal.duration * 2,

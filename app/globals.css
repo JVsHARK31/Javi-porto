@@ -82,12 +82,20 @@ body {
   }
 }
 
-/* Hide default cursor on desktop */
-@media (min-width: 768px) {
+/* Cursor hiding rules - DISABLED to keep default cursor visible */
+/* @media (min-width: 768px) {
   * {
     cursor: none !important;
   }
-}
+
+  input, textarea, [contenteditable] {
+    cursor: text !important;
+  }
+
+  button, a, [role="button"] {
+    cursor: pointer !important;
+  }
+} */
 
 @layer components {
   .sakura-button {

@@ -15,7 +15,7 @@ export default function WaveAnimation() {
       transition: {
         duration: 20,
         repeat: Infinity,
-        ease: [0.445, 0.05, 0.55, 0.95],
+        ease: [0.445, 0.05, 0.55, 0.95] as const,
         times: [0, 0.33, 0.66, 1]
       }
     }

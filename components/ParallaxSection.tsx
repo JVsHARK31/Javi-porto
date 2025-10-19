@@ -37,7 +37,7 @@ export default function ParallaxSection({
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{
-        opacity: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+        opacity: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const },
       }}
     >
       {children}

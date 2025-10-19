@@ -64,7 +64,7 @@ export default function MusicPlayer() {
         className="fixed bottom-6 right-6 z-50"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 1, type: 'spring', stiffness: 200 }}
+        transition={{ delay: 1, type: 'spring' as const, stiffness: 200 }}
       >
         <motion.div
           className={`relative ${isExpanded ? 'bg-white/95 dark:bg-gray-900/95' : 'bg-white/90 dark:bg-gray-900/90'} 

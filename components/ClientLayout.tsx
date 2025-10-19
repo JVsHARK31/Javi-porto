@@ -32,7 +32,8 @@ export default function ClientLayout({ children }: { children: ReactNode }) {
       <WaveAnimation />
       <ParticleBackground />
       <SakuraPetals />
-      {!isMobile && <MouseFollower />}
+      {/* MouseFollower disabled to keep default cursor visible */}
+      {/* {!isMobile && <MouseFollower />} */}
       <MusicPlayer />
       <Navbar />
       <main className="relative z-10">

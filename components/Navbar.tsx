@@ -47,7 +47,7 @@ export default function Navbar() {
         y: 0, 
         opacity: 1,
         transition: {
-          type: 'spring',
+          type: 'spring' as const,
           stiffness: 100,
           damping: 20,
           delay: 0.1
@@ -92,7 +92,7 @@ export default function Navbar() {
                   opacity: 1, 
                   y: 0,
                   transition: {
-                    type: 'spring',
+                    type: 'spring' as const,
                     stiffness: 200,
                     damping: 15,
                     delay: 0.3 + index * 0.08

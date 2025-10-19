@@ -33,7 +33,7 @@ export function SmoothTextReveal({
         transition={{
           duration,
           delay,
-          ease: [0.215, 0.61, 0.355, 1], // Smooth cubic-bezier
+          ease: [0.215, 0.61, 0.355, 1] as const, // Smooth cubic-bezier
         }}
       >
         {children}
@@ -73,7 +73,7 @@ export function WordReveal({
             transition={{
               duration: 0.6,
               delay: delay + (i * stagger),
-              ease: [0.22, 1, 0.36, 1],
+              ease: [0.22, 1, 0.36, 1] as const,
             }}
           >
             {word}&nbsp;
@@ -130,7 +130,7 @@ export function CharReveal({
           transition={{
             duration: 0.5,
             delay: delay + (i * stagger),
-            ease: [0.215, 0.61, 0.355, 1],
+            ease: [0.215, 0.61, 0.355, 1] as const,
           }}
           style={{ transformStyle: 'preserve-3d' }}
         >

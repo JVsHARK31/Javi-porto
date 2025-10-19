@@ -121,7 +121,7 @@ export default function FloatingElements() {
             duration: element.duration,
             delay: element.delay,
             repeat: Infinity,
-            ease: [0.445, 0.05, 0.55, 0.95],
+            ease: [0.445, 0.05, 0.55, 0.95] as const,
             times: [0, 0.2, 0.5, 0.8, 1]
           }}
         >
@@ -167,7 +167,7 @@ export default function FloatingElements() {
             duration: 3 + Math.random() * 2,
             repeat: Infinity,
             delay: Math.random() * 5,
-            ease: [0.16, 1, 0.3, 1],
+            ease: [0.16, 1, 0.3, 1] as const,
           }}
         />
       ))}

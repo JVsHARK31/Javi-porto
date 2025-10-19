@@ -79,7 +79,7 @@ export default function About() {
             <motion.div 
               className="relative w-full max-w-sm md:max-w-md mx-auto px-4 md:px-0"
               whileHover={{ scale: 1.02 }}
-              transition={{ type: 'spring', stiffness: 300 }}
+              transition={{ type: 'spring' as const, stiffness: 300 }}
             >
               <motion.div 
                 className="absolute inset-0 bg-gradient-to-r from-sakura-400 to-pink-500 rounded-2xl"

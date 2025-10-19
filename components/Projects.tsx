@@ -11,7 +11,8 @@ const containerVariants = {
     transition: {
       staggerChildren: 0.15,
       delayChildren: 0.3,
-      ease: [0.43, 0.13, 0.23, 0.96],
+      duration: 0.8,
+      ease: [0.43, 0.13, 0.23, 0.96] as const,
     },
   },
 }
@@ -23,11 +24,11 @@ const itemVariants = {
     y: 0,
     scale: 1,
     transition: {
-      type: 'spring',
+      type: 'spring' as const,
       stiffness: 100,
       damping: 15,
       mass: 0.5,
-      ease: [0.48, 0.15, 0.25, 1],
+      ease: [0.48, 0.15, 0.25, 1] as const,
     },
   },
 }
@@ -93,7 +94,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         y: -8,
         scale: 1.02,
         transition: {
-          type: 'spring',
+          type: 'spring' as const,
           stiffness: 300,
           damping: 20
         }
@@ -104,7 +105,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         opacity: 1, 
         scale: 1,
         transition: {
-          type: 'spring',
+          type: 'spring' as const,
           stiffness: 100,
           damping: 15,
           delay: 0.1
