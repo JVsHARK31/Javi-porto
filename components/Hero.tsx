@@ -150,7 +150,7 @@ export default function Hero() {
             >
               👋
             </motion.span>
-            Selamat datang di portofolio saya
+            Welcome to my portfolio
             <Sparkles className="w-4 h-4 animate-pulse" />
           </motion.span>
         </motion.div>
@@ -160,7 +160,7 @@ export default function Hero() {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 sm:mb-8 font-serif px-4 leading-tight"
           style={{ lineHeight: '1.2' }}
         >
-          <span className="text-gray-900 dark:text-white inline-block mr-2 sm:mr-3 lg:mr-4">Saya</span>
+          <span className="text-gray-900 dark:text-white inline-block mr-2 sm:mr-3 lg:mr-4">I'm</span>
           <GlowText className="text-gradient-sakura inline-block pb-2">Javier</GlowText>
           <br />
           <AnimatedText className="text-gray-900 dark:text-white text-2xl sm:text-3xl md:text-5xl lg:text-7xl inline-block mt-2" delay={0.5}>
@@ -186,13 +186,13 @@ export default function Hero() {
         >
           <div className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed px-4">
             <WordReveal
-              text="Passionate dalam menciptakan solusi inovatif melalui teknologi."
+              text="Passionate about creating innovative solutions through technology."
               delay={1.2}
               stagger={0.02}
             />
             <div>
-              {' '}Fokus pada <CharReveal text="Software Engineering" className="text-sakura-500 font-semibold" delay={1.8} />,
-              {' '}<CharReveal text="Frontend Development" className="text-sakura-500 font-semibold" delay={2.2} />, dan
+              {' '}Focused on <CharReveal text="Software Engineering" className="text-sakura-500 font-semibold" delay={1.8} />,
+              {' '}<CharReveal text="Frontend Development" className="text-sakura-500 font-semibold" delay={2.2} />, and
             </div>
             <div className="mt-1 sm:mt-2">
               {' '}<CharReveal text="Artificial Intelligence" className="text-sakura-500 font-semibold" delay={2.6} />
@@ -209,7 +209,7 @@ export default function Hero() {
             onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <div className="sakura-button group relative overflow-hidden text-sm sm:text-base">
-              <span className="relative z-10">Kenali Saya</span>
+              <span className="relative z-10">About Me</span>
               <motion.div 
                 className="absolute inset-0 bg-gradient-to-r from-pink-500 to-sakura-600"
                 initial={{ x: '-100%' }}
@@ -229,7 +229,7 @@ export default function Hero() {
             onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <div className="sakura-button-outline group text-sm sm:text-base">
-              <span className="relative z-10">Lihat Proyek</span>
+              <span className="relative z-10">View Projects</span>
             </div>
           </MagneticButton>
         </motion.div>
@@ -240,7 +240,7 @@ export default function Hero() {
         >
           {[
             { href: "https://github.com/javierathallah", icon: Github, label: "GitHub" },
-            { href: "https://linkedin.com/in/javierathallah", icon: Linkedin, label: "LinkedIn" },
+            { href: "https://www.linkedin.com/in/javier-athallah", icon: Linkedin, label: "LinkedIn" },
             { href: "mailto:javier.athallah@binus.ac.id", icon: Mail, label: "Email" }
           ].map((social, index) => (
             <motion.a

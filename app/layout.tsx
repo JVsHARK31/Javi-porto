@@ -18,7 +18,7 @@ const notoSerifJP = Noto_Serif_JP({
 
 export const metadata: Metadata = {
   title: 'Javier Muhammad Athallah | Software Engineer Portfolio',
-  description: 'Portfolio profesional Javier Muhammad Athallah - Mahasiswa Computer Science Software Engineering di BINUS University, Jakarta. Spesialisasi dalam Software Engineering, Frontend Development, AI, Machine Learning, dan UI/UX Design.',
+  description: 'Professional portfolio of Javier Muhammad Athallah - Computer Science Software Engineering student at BINUS University, Jakarta. Specializing in Software Engineering, Frontend Development, AI, Machine Learning, and UI/UX Design.',
   keywords: ['Javier Muhammad Athallah', 'Software Engineer', 'BINUS University', 'Portfolio', 'Frontend Developer', 'AI', 'Machine Learning', 'React', 'Next.js'],
   authors: [{ name: 'Javier Muhammad Athallah' }],
   icons: {
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Javier Muhammad Athallah | Software Engineer Portfolio',
-    description: 'Portfolio profesional dengan tema sakura - Mahasiswa Computer Science yang passionate dalam menciptakan solusi teknologi inovatif',
+    description: 'Professional portfolio with sakura theme - Computer Science student passionate about creating innovative technology solutions',
     type: 'website',
-    locale: 'id_ID',
+    locale: 'en_US',
     images: [
       {
         url: '/logo-jv.jpg',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Javier Muhammad Athallah | Software Engineer',
-    description: 'Portfolio profesional dengan tema sakura',
+    description: 'Professional portfolio with sakura theme',
     images: ['/logo-jv.jpg'],
   },
   robots: {
@@ -62,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="id" className={`${inter.variable} ${notoSerifJP.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${notoSerifJP.variable}`} suppressHydrationWarning>
       <body className={inter.className}>
         <ClientLayout>
           {children}

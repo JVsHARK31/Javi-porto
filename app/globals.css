@@ -72,6 +72,13 @@ body {
   min-height: 100vh;
   width: 100%;
   position: relative;
+  /* Optimize rendering performance */
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 /* Prevent horizontal scroll on mobile */
@@ -163,6 +170,27 @@ body {
            bg-clip-text text-transparent inline-block;
     line-height: 1.2;
     padding-bottom: 0.125em;
+    /* Optimize gradient rendering */
+    will-change: transform;
+    transform: translateZ(0);
+  }
+  
+  /* Performance optimizations for animations */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  /* Reduce animation for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
   
   .glass-effect {

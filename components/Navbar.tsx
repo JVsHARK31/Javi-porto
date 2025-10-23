@@ -6,11 +6,11 @@ import { Moon, Sun, Menu, X } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
 
 const navItems = [
-  { name: 'Beranda', href: '#home' },
-  { name: 'Tentang', href: '#about' },
-  { name: 'Pengalaman', href: '#experience' },
-  { name: 'Keahlian', href: '#skills' },
-  { name: 'Proyek', href: '#projects' },
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Projects', href: '#projects' },
 ]
 
 export default function Navbar() {

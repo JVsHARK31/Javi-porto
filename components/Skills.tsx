@@ -132,12 +132,12 @@ export default function Skills() {
       >
         <motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-serif mb-4">
-            <span className="text-gradient-sakura">Keahlian</span>{' '}
-            <span className="text-gray-900 dark:text-white">& Teknologi</span>
+            <span className="text-gradient-sakura">Skills</span>{' '}
+            <span className="text-gray-900 dark:text-white">& Technologies</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-sakura-400 to-pink-500 mx-auto rounded-full mb-4" />
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Teknologi dan tools yang saya kuasai dalam pengembangan perangkat lunak
+            Technologies and tools I master in software development
           </p>
         </motion.div>
 
@@ -167,11 +167,11 @@ export default function Skills() {
         >
           <div className="sakura-card inline-block">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-              Selalu Belajar & Berkembang 🚀
+              Always Learning & Growing 🚀
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Saya terus mengeksplorasi teknologi baru dan meningkatkan keahlian saya
-              untuk memberikan solusi terbaik
+              I continuously explore new technologies and improve my skills
+              to deliver the best solutions
             </p>
           </div>
         </motion.div>

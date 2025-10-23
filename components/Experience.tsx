@@ -32,8 +32,8 @@ const experiences = [
     title: 'Software Engineer',
     organization: 'BINUS University',
     location: 'Jakarta, Indonesia',
-    period: 'Agustus 2024 - Sekarang',
-    description: 'Menerapkan pengetahuan teoretis dalam skenario praktis, mengerjakan proyek dunia nyata, dan memperoleh pengalaman industri yang berharga dalam metodologi dan praktik terbaik pengembangan perangkat lunak.',
+    period: 'August 2024 - Present',
+    description: 'Applying theoretical knowledge in practical scenarios, working on real-world projects, and gaining valuable industry experience in software development methodologies and best practices.',
     skills: ['Software Development', 'Full-Stack Development', 'Agile Methodology', 'Team Collaboration'],
   },
 ]
@@ -45,8 +45,8 @@ const education = [
     title: 'Bachelor of Computer Science',
     organization: 'BINUS University',
     location: 'Jakarta, Indonesia',
-    period: 'Agustus 2024 - Agustus 2028',
-    description: 'Program komprehensif yang mencakup algoritma, struktur data, pola desain perangkat lunak, sistem basis data, pengembangan web, pengembangan mobile, dan kecerdasan buatan.',
+    period: 'August 2024 - August 2028',
+    description: 'Comprehensive program covering algorithms, data structures, software design patterns, database systems, web development, mobile development, and artificial intelligence.',
     skills: ['Algorithms', 'Data Structures', 'Software Design Patterns', 'Database Systems', 'Web Development', 'Mobile Development', 'Artificial Intelligence'],
   },
 ]
@@ -149,12 +149,12 @@ export default function Experience() {
       >
         <motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-serif mb-4">
-            <span className="text-gradient-sakura">Pengalaman</span>{' '}
-            <span className="text-gray-900 dark:text-white">& Pendidikan</span>
+            <span className="text-gradient-sakura">Experience</span>{' '}
+            <span className="text-gray-900 dark:text-white">& Education</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-sakura-400 to-pink-500 mx-auto rounded-full mb-4" />
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Perjalanan saya dalam dunia teknologi dan pengembangan perangkat lunak
+            My journey in technology and software development
           </p>
         </motion.div>
 

@@ -36,7 +36,7 @@ const itemVariants = {
 const projects = [
   {
     title: 'E-Commerce Platform',
-    description: 'Platform e-commerce modern dengan fitur lengkap termasuk sistem pembayaran, manajemen produk, dan dashboard admin.',
+    description: 'Modern e-commerce platform with complete features including payment system, product management, and admin dashboard.',
     image: '/images/project-1.jpg',
     category: 'Web Development',
     tags: ['React', 'Next.js', 'Node.js', 'MongoDB'],
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: 'AI Chatbot Assistant',
-    description: 'Chatbot berbasis AI yang dapat menjawab pertanyaan dan memberikan rekomendasi menggunakan Natural Language Processing.',
+    description: 'AI-based chatbot that can answer questions and provide recommendations using Natural Language Processing.',
     image: '/images/project-2.jpg',
     category: 'AI & Machine Learning',
     tags: ['Python', 'TensorFlow', 'NLP', 'React'],
@@ -54,7 +54,7 @@ const projects = [
   },
   {
     title: 'Portfolio Website Builder',
-    description: 'Platform untuk membuat website portfolio dengan drag-and-drop editor dan template yang dapat dikustomisasi.',
+    description: 'Platform for creating portfolio websites with drag-and-drop editor and customizable templates.',
     image: '/images/project-3.jpg',
     category: 'Web Development',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
@@ -63,7 +63,7 @@ const projects = [
   },
   {
     title: 'Task Management App',
-    description: 'Aplikasi manajemen tugas yang intuitif dengan fitur kolaborasi tim, deadline tracking, dan notifikasi real-time.',
+    description: 'Intuitive task management application with team collaboration features, deadline tracking, and real-time notifications.',
     image: '/images/project-4.jpg',
     category: 'Mobile Development',
     tags: ['React Native', 'Redux', 'Node.js', 'Socket.io'],
@@ -194,12 +194,12 @@ export default function Projects() {
       >
         <motion.div variants={itemVariants} className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-serif mb-4">
-            <span className="text-gradient-sakura">Proyek</span>{' '}
-            <span className="text-gray-900 dark:text-white">Unggulan</span>
+            <span className="text-gradient-sakura">Featured</span>{' '}
+            <span className="text-gray-900 dark:text-white">Projects</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-sakura-400 to-pink-500 mx-auto rounded-full mb-4" />
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Beberapa proyek yang telah saya kerjakan dengan passion dan dedikasi
+            Some projects I have worked on with passion and dedication
           </p>
         </motion.div>
 
@@ -238,7 +238,7 @@ export default function Projects() {
             className="text-center py-12"
           >
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Tidak ada proyek dalam kategori ini
+              No projects in this category
             </p>
           </motion.div>
         )}

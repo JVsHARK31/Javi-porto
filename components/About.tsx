@@ -31,22 +31,22 @@ const interests = [
   {
     icon: Code,
     title: 'Software Engineering',
-    description: 'Membangun aplikasi yang robust dan scalable dengan best practices',
+    description: 'Building robust and scalable applications with best practices',
   },
   {
     icon: Palette,
     title: 'Frontend Development',
-    description: 'Menciptakan user interface yang indah dan responsif',
+    description: 'Creating beautiful and responsive user interfaces',
   },
   {
     icon: Brain,
     title: 'AI & Machine Learning',
-    description: 'Mengeksplorasi potensi kecerdasan buatan untuk solusi inovatif',
+    description: 'Exploring artificial intelligence potential for innovative solutions',
   },
   {
     icon: Database,
     title: 'Database Design',
-    description: 'Merancang struktur data yang efisien dan optimal',
+    description: 'Designing efficient and optimal data structures',
   },
 ]
 
@@ -68,8 +68,8 @@ export default function About() {
       >
         <motion.div variants={itemVariants} className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-serif mb-4">
-            <span className="text-gradient-sakura">Tentang</span>{' '}
-            <span className="text-gray-900 dark:text-white">Saya</span>
+            <span className="text-gradient-sakura">About</span>{' '}
+            <span className="text-gray-900 dark:text-white">Me</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-sakura-400 to-pink-500 mx-auto rounded-full" />
         </motion.div>
@@ -119,24 +119,24 @@ export default function About() {
 
           <motion.div variants={itemVariants} className="space-y-4 md:space-y-6 order-1 md:order-2 px-4 md:px-0">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
-              Halo! Saya Javier 👋
+              Hello! I'm Javier 👋
             </h3>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Saya adalah mahasiswa <span className="font-semibold text-sakura-500">Computer Science Software Engineering</span> di 
+              I am a <span className="font-semibold text-sakura-500">Computer Science Software Engineering</span> student at 
               <span className="font-semibold text-sakura-500"> BINUS University</span>, Jakarta. 
-              Dengan passion yang mendalam dalam teknologi, saya berkomitmen untuk menciptakan solusi-solusi 
-              inovatif yang dapat memberikan dampak positif.
+              With a deep passion for technology, I am committed to creating innovative 
+              solutions that can have a positive impact.
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Sebagai <span className="font-semibold text-sakura-500">Software Engineer</span> di BINUS University, 
-              saya memiliki kesempatan untuk menerapkan pengetahuan teoretis dalam proyek-proyek dunia nyata. 
-              Pengalaman ini telah memperkaya pemahaman saya tentang metodologi pengembangan perangkat lunak 
-              dan praktik terbaik dalam industri.
+              As a <span className="font-semibold text-sakura-500">Software Engineer</span> at BINUS University, 
+              I have the opportunity to apply theoretical knowledge in real-world projects. 
+              This experience has enriched my understanding of software development methodologies 
+              and industry best practices.
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Saya terus mengembangkan keahlian saya dalam berbagai aspek pengembangan perangkat lunak, 
-              dari frontend development hingga artificial intelligence. Setiap hari adalah kesempatan 
-              untuk belajar hal baru dan berkontribusi dalam ekosistem teknologi.
+              I continuously develop my skills in various aspects of software development, 
+              from frontend development to artificial intelligence. Every day is an opportunity 
+              to learn something new and contribute to the technology ecosystem.
             </p>
           </motion.div>
         </div>

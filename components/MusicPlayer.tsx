@@ -159,7 +159,7 @@ export default function MusicPlayer() {
                 >
                   <div className="flex items-center gap-2">
                     <span className="text-sakura-500">♪</span>
-                    <span>Bunga Sakura</span>
+                    <span>Cherry Blossom</span>
                     {isPlaying && (
                       <motion.span
                         animate={{ opacity: [0.5, 1, 0.5] }}
@@ -291,7 +291,7 @@ export default function MusicPlayer() {
                   🌸
                 </motion.span>
                 <span className="text-gray-700 dark:text-gray-300">
-                  Memutar Bunga Sakura
+                  Playing Cherry Blossom
                 </span>
               </div>
             </motion.div>

@@ -15,7 +15,7 @@ export default function Footer() {
               JMA
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Mahasiswa Computer Science yang passionate dalam menciptakan solusi teknologi inovatif.
+              Computer Science student passionate about creating innovative technology solutions.
             </p>
             <div className="flex gap-3">
               <a
@@ -28,7 +28,7 @@ export default function Footer() {
                 <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
               </a>
               <a
-                href="https://linkedin.com/in/javierathallah"
+                href="https://www.linkedin.com/in/javier-athallah"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white dark:bg-gray-800 hover:bg-sakura-100 dark:hover:bg-sakura-900/30 transition-colors"
@@ -48,16 +48,16 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
-              Navigasi Cepat
+              Quick Navigation
             </h4>
             <ul className="space-y-2">
-              {['Beranda', 'Tentang', 'Pengalaman', 'Keahlian', 'Proyek'].map((item) => (
+              {['Home', 'About', 'Experience', 'Skills', 'Projects'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
                     onClick={(e) => {
                       e.preventDefault()
-                      const element = document.querySelector(`#${item.toLowerCase() === 'beranda' ? 'home' : item.toLowerCase()}`)
+                      const element = document.querySelector(`#${item.toLowerCase()}`)
                       if (element) {
                         element.scrollIntoView({ behavior: 'smooth' })
                       }
@@ -73,7 +73,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
-              Kontak
+              Contact
             </h4>
             <ul className="space-y-2 text-gray-600 dark:text-gray-400">
               <li>
@@ -101,7 +101,7 @@ export default function Footer() {
               transition={{ delay: 0.5 }}
               className="text-gray-600 dark:text-gray-400 text-sm flex items-center gap-2"
             >
-              Dibuat dengan <Heart className="w-4 h-4 text-sakura-500 fill-current animate-pulse" /> dan React
+              Built with <Heart className="w-4 h-4 text-sakura-500 fill-current animate-pulse" /> and React
             </motion.p>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function Footer() {
         <div className="mt-8 text-center">
           <div className="inline-flex items-center gap-2 text-sm text-gray-500 dark:text-gray-500">
             <span>🌸</span>
-            <span>Terinspirasi dari keindahan musim sakura</span>
+            <span>Inspired by the beauty of cherry blossom season</span>
             <span>🌸</span>
           </div>
         </div>
