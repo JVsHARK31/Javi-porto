@@ -19,7 +19,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://github.com/javierathallah"
+                href="https://github.com/JVsHARK31"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white dark:bg-gray-800 hover:bg-sakura-100 dark:hover:bg-sakura-900/30 transition-colors"

@@ -40,7 +40,7 @@ const projects = [
     image: '/images/project-1.jpg',
     category: 'Web Development',
     tags: ['React', 'Next.js', 'Node.js', 'MongoDB'],
-    github: 'https://github.com/javierathallah',
+    github: 'https://github.com/JVsHARK31',
     demo: 'https://example.com',
   },
   {
@@ -49,7 +49,7 @@ const projects = [
     image: '/images/project-2.jpg',
     category: 'AI & Machine Learning',
     tags: ['Python', 'TensorFlow', 'NLP', 'React'],
-    github: 'https://github.com/javierathallah',
+    github: 'https://github.com/JVsHARK31',
     demo: 'https://example.com',
   },
   {
@@ -58,7 +58,7 @@ const projects = [
     image: '/images/project-3.jpg',
     category: 'Web Development',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
-    github: 'https://github.com/javierathallah',
+    github: 'https://github.com/JVsHARK31',
     demo: 'https://example.com',
   },
   {
@@ -67,7 +67,7 @@ const projects = [
     image: '/images/project-4.jpg',
     category: 'Mobile Development',
     tags: ['React Native', 'Redux', 'Node.js', 'Socket.io'],
-    github: 'https://github.com/javierathallah',
+    github: 'https://github.com/JVsHARK31',
     demo: 'https://example.com',
   },
 ]

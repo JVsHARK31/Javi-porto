@@ -239,7 +239,7 @@ export default function Hero() {
           className="flex items-center justify-center gap-6 mb-12"
         >
           {[
-            { href: "https://github.com/javierathallah", icon: Github, label: "GitHub" },
+            { href: "https://github.com/JVsHARK31", icon: Github, label: "GitHub" },
             { href: "https://www.linkedin.com/in/javier-athallah", icon: Linkedin, label: "LinkedIn" },
             { href: "mailto:javier.athallah@binus.ac.id", icon: Mail, label: "Email" }
           ].map((social, index) => (
